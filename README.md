@@ -187,6 +187,6 @@ Test Doubles:
 
 ## Powered by
 
-[GitHub Pages]https://pages.github.com/
+[GitHub Pages](https://pages.github.com/)
 [Stackedit - In-browser Markdown editor](https://stackedit.io/app#)
 [Github - pestbuns](https://github.com/pestbuns)
