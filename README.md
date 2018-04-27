@@ -100,11 +100,11 @@ qemu -> lightweight virtualization
 
 ## 9) Internet
 
-1) [What is the internet ?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
-2) [The internet: Wires, Cables, Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM)
-3) [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU)
-4) [The Internet: Packets, Routing & Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto)
-5) [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s)
-6) [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs)
-7) [The Internet: Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
-8) [The Internet: How Search Works](https://www.youtube.com/watch?v=LVV_93mBfSU)
+1. [What is the internet ?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
+2. [The internet: Wires, Cables, Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM)
+3. [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU)
+4. [The Internet: Packets, Routing & Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto)
+5. [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s)
+6. [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs)
+7. [The Internet: Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
+8. [The Internet: How Search Works](https://www.youtube.com/watch?v=LVV_93mBfSU)
