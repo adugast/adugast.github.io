@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# Linux Overall
 
-You can use the [editor on GitHub](https://github.com/pestbuns/pestbuns.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+These information will cover ...
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Summary
+1. Hardware
+2. Boot-Sequence
+3. Kernel
+4. Linux System
 
-### Markdown
+## 1) Hardware
+- Motherboard
+- CPU
+- RAM
+- Hard Disk
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 2) Boot-Sequence
+- Power ON
+- EEPROM
+- Power-On Self-Test (POST)
+- MBR
+- Kernel
+- Init System
 
-```markdown
-Syntax highlighted code block
+## 3) Kernel
+- process management - scheduler, signal handling, process/threads      OVER CPU                                        
+- memory management - virtual memory and MMU                            OVER RAM                                        
+- filesystems management - filesystem type describe by a block device   OVER Hard Disk, floppy disk, CD                 
+- device drivers - character device                                     OVER Peripherals (mouse, keyboard, audio, ..)   
+- network management - network drivers and network protocols            OVER Network Controller (ethernet or wifi)
 
-# Header 1
-## Header 2
-### Header 3
+## 4) Linux System
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pestbuns/pestbuns.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+POSIX: Portable Operating System Interface (standard, norme)                                                               
+                                                                                                                           
+C lib
+- common header files: stdlib, unistd, stdio, string                                                               
+- variable and limit: stdbool, stdint, limits                                                                      
+- socket headers                                                                                                   
+- API header: syslog, inotify, regex, ncurses, pthread...                                                          
+                                                                                                                           
+elf format and object code                                                                                                 
+compiler                                                                                                                   
+GCC:                                                                                                                       
+    * compilation from .c to .o                                                                                            
+    * linkage of symbols in one bin                                                                                        
+                                                                                                                           
+Filesystems: rootfs, procfs, sysfs, autofs, nfs                                                                            
+FSH:                                                                                                                       
+                                                                                                                           
+Daemons                                                                                                                    
+    * ntpd                                                                                                                 
+    * syslogd                                                                                                              
+    * watchdogd                                                                                                            
+    * sshd                                                                                                                                                                    
+    * inetd/xinetd (extended internet daemon)
