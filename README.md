@@ -1,5 +1,7 @@
 # The Not So Quick Linux Notions Guide
 
+![Linux Logo](https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png)
+
 ### Summary
 
 1. Hardware
@@ -162,7 +164,7 @@ The Swiss Army Knife of Embedded Linux
 
 ## 9) Internet
 
-![enter image description here](https://upload.wikimedia.org/wikipedia/commons/f/f4/Code.org_logo.svg)
+![Code.org Logo](https://upload.wikimedia.org/wikipedia/commons/f/f4/Code.org_logo.svg)
 
 1. [What is the internet ?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
 2. [The internet: Wires, Cables, Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM)
