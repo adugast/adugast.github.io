@@ -15,11 +15,12 @@
 9. Internet (Code.org)
 10. Unit Test
 11. Machine Learning, AI and Neuronal Network
+12. Best Resources
 
 ## 1) Hardware
 
 - Motherboard
-- Central Process Unit (CPU)
+- Central Processing Unit (CPU)
 Composed of:
   - Control Unit (CU)
   - Arithmetic/Logic Unit (ALU)
@@ -92,8 +93,9 @@ Filesystems
 - nfs 
 - ...
 
-File System Hyerarchy (FHS)                                                                                                                       
-                                                                                                                           
+FHS - Filesystem Hierarchy Standard
+[Linux Filesystem Hierarchy](http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/Linux-Filesystem-Hierarchy.html)
+
 System Daemons                                                                                                                    
 
 - ntpd                                                                                                                 
@@ -186,6 +188,11 @@ Test Doubles:
 
 ## 11) Machine Learning, AI, and Neuronal Network
 
+## 12) Best Resources
+
+- [The Linux Documentation Project](https://www.tldp.org/LDP/tlk/)
+- [How The Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
+- [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/html/single/bgnet.html)
 
 ## Powered by
 
