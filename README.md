@@ -11,7 +11,7 @@
 7. OSI Model
 8. Embedded Linux
 9. Internet (Code.org)
-10. Unit Test (UT)
+10. Unit Test
 11. Machine Learning, AI and Neuronal Network
 
 ## 1) Hardware
@@ -173,7 +173,7 @@ The Swiss Army Knife of Embedded Linux
 7. [The Internet: Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
 8. [The Internet: How Search Works](https://www.youtube.com/watch?v=LVV_93mBfSU)
 
-## 10) Unit Test (UT)
+## 10) Unit Test
 
 Test Doubles:
 - faking
