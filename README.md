@@ -34,18 +34,18 @@ I-time + E-time = Machine Cycle -> (1) Fetch, (2) Decode, (3) Execute, (4) Store
 - Kernel
 - Init System
 
-- different initsystems:                                                                                                 
-    - s6                                                                                                                
-    - systemd(debian)                                                                                                   
-    - upstart(ubuntu)                                                                                                   
-    - openRC                                                                                                            
-    - initng                                                                                                            
+different initsystems:                                                                                                 
+- s6                                                                                                                
+- systemd(debian)                                                                                                   
+- upstart(ubuntu)                                                                                                   
+- openRC                                                                                                            
+- initng                                                                                                            
                                                                                                                         
-- different bootloaders:                                                                                                 
-    - GNU GRUB (GRand Unified Bootloader)                                                                               
-    - LILO (Linux Loader)                                                                                               
-    - BURG (New bootloader)                                                                                             
-    - Syslinux
+different bootloaders:                                                                                                 
+- GNU GRUB (GRand Unified Bootloader)                                                                               
+- LILO (Linux Loader)                                                                                               
+- BURG (New bootloader)                                                                                             
+- Syslinux
 
 ## 3) Kernel
 
@@ -56,12 +56,12 @@ I-time + E-time = Machine Cycle -> (1) Fetch, (2) Decode, (3) Execute, (4) Store
 - network management - network drivers and network protocols            OVER Network Controller (ethernet or wifi)
 
 Types:                                                                                                                  
-    * Microkernel (as Hurd) - small kernel space, big user space (due to the lack of drivers support, drivers not part of kernel -> in user space)
-    * Monolithic (as Linux)                                                                                             
-    * Hybrid (boundaries between micro and monolithic kernels)                                                          
+- Microkernel (as Hurd): small kernel space, big user space (due to the lack of drivers support, drivers not part of kernel -> in user space)
+- Monolithic (as Linux)                                                                                             
+- Hybrid (boundaries between micro and monolithic kernels)                                                          
                                                                                                                         
-Modularity:                                                                                                             
-    LKM - Loadable Kernel Module
+Modularity:                                                                                                        
+    Loadable Kernel Module (LKM)
 
 ## 4) Linux System
 
@@ -168,6 +168,7 @@ Test Doubles:
 - faking
 - mocking
 - stubbing
+
 [Difference between fakes, mocks and stubs](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da)
 
 ## 11) Machine Learning, AI, and Neuronal Network
