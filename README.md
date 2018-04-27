@@ -15,27 +15,55 @@
 9. Internet (Code.org)
 10. Unit Test
 11. Machine Learning, AI and Neuronal Network
-12. Best Resources
+12. Quantum Computing
+13. Best Resources
 
 ## 1) Hardware
 
-- Motherboard
+- Motherboard -> link every computer components and host the EEPROM.
 - Central Processing Unit (CPU)
-Composed of:
   - Control Unit (CU)
   - Arithmetic/Logic Unit (ALU)
-I-time + E-time = Machine Cycle -> (1) Fetch, (2) Decode, (3) Execute, (4) Store
-- RAM
+  I-time + E-time = Machine Cycle</br>
+  (1) Fetch, (2) Decode, (3) Execute, (4) Store
+  Cache L1/ Cache L2
+- Random Access Memory (RAM)
+  - Static Random Access Memory (SRAM)
+  - Dynamic Random Acces Memory (DRAM): transistor and capasitor are paired to create a memory cell which represent a single bit of data
 - Hard Disk
+
+go further:
+- Network board
+- Graphical Processing Unit (GPU)
+- Von Neumann Architecture
+- Transistor: acts as a switch that lets the control circuitry on the memory chip to read the capacitor or change it state
+- Capacitor
 
 ## 2) Boot-Sequence
 
-- Power ON
+- Power-ON
 - EEPROM
 - Power-On Self-Test (POST)
+  - Initializes the hardware: verify CPU registers, verify the integrity of the BIOS code itself
 - MBR
 - Kernel
 - Init System
+
+go further:
+- difference BIOS/MBR, UEFI/GUID
+
+MBR {                                                                                                                  
+- bootstrap code - call the kernel (446 bytes)                                                                     
+- partition table (4 * 16 bytes = 64 bytes)                                                                        
+  - partition1                                                                                                   
+  - partition2                                                                                                   
+  - partition3                                                                                                   
+  - partition4                                                                                                   
+  - bootsignature (2 bytes, magic number 0x55AA)                                                                 
+}                                                                                                                      
+so 446 + 4*16 + 2 = 512 bytes                                                                                          
+
+initrd, initramfs            
 
 different initsystems:                                                                                                 
 - s6                                                                                                                
@@ -66,6 +94,16 @@ Types:
 Modularity:                                                                                                        
 - Loadable Kernel Module (LKM)
 
+go further:
+- CFS and red-black tree algorithm                                                                                      
+- page table with MMU                                                                                                   
+- TLB - Translation Lookaside Buffer                                                                                    
+- process and memory management stack and heap (+sections)                                                              
+  - sections: bss, data, text                                                                                           
+  - assembly, cpu registers                                                                                             
+- difference between block and character device (stream and page)                                                       
+- network drivers and protocols at kernel level                                                                         
+
 ## 4) Linux System
 
 POSIX: Portable Operating System Interface (standard, norme)                                                               
@@ -77,15 +115,14 @@ C lib
 - socket headers                                                                                                   
 - API header: syslog, inotify, regex, ncurses, pthread...                                                          
                                                                                                                            
-Elf format and object code                                                                                                 
-                                                                                                                 
-GCC                                                                                                                    
+Elf format and object code:
 
+
+GCC:                                                                                                                    
 - compilation from .c to .o                                                                                            
 - linkage of symbols in one binary                                                                                        
                                                                                                                            
-Filesystems
-
+Filesystems:
 - rootfs
 - procfs
 - sysfs
@@ -96,13 +133,18 @@ Filesystems
 FHS - Filesystem Hierarchy Standard
 [Linux Filesystem Hierarchy](http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/Linux-Filesystem-Hierarchy.html)
 
-System Daemons                                                                                                                    
-
+System Daemons:                                                                                                                  
 - ntpd                                                                                                                 
 - syslogd                                                                                                              
 - watchdogd                                                                                                            
 - sshd                                                                                                                                                                    
 - inetd/xinetd (extended internet daemon)
+
+Mutexes:                                                                                                                
+- semaphores                                                                                                            
+- futex                                                                                                                 
+- compare and swap                                                                                                      
+- atomic instruction
 
 ## 5) IPC
 
@@ -134,6 +176,10 @@ System Daemons
 
 data encapsulation principles
 
+go further:                                                                                                             
+- tcp handshake                                                                                                         
+- router, switch, dns, hub, ...
+
 ## 8) Embedded Linux
 
 Platform requirement -> arm, mips, xtensa, intel, amd, powerpc      
@@ -164,6 +210,16 @@ Busybox
 
 The Swiss Army Knife of Embedded Linux
 
+go further:
+- SFPs, ASIC/FPGA, CPLD, PCB, PCI, IC, I2C, SCSI                                                                 
+- bus                                                                                                                   
+- ARP: Address Resolution Protocol. ARP table in routers to map IP address to mac address                               
+- Udev: Device manager for linux kernel                                                                                                                                                                          
+- Makefile, Cmake                                                                                                       
+- Agile Methodology: Scrum, DevOps                                                                                      
+- Network hardware: ROUTER, BRIDGE, SWITCH, NAT network adress translation                                              
+- DNS: /etc/resolv.conf
+
 ## 9) Internet
 
 ![Code.org Logo](https://upload.wikimedia.org/wikipedia/commons/f/f4/Code.org_logo.svg)
@@ -188,7 +244,11 @@ Test Doubles:
 
 ## 11) Machine Learning, AI, and Neuronal Network
 
-## 12) Best Resources
+## 12) Quantum Computing
+
+[Quantum Computers Explained](https://www.youtube.com/watch?v=JhHMJCUmq28)
+
+## 13) Best Resources
 
 - [The Linux Documentation Project](https://www.tldp.org/LDP/tlk/)
 - [How The Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
