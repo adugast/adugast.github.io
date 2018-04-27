@@ -65,23 +65,23 @@ Modularity:
 
 ## 4) Linux System
 
-### POSIX: Portable Operating System Interface (standard, norme)                                                               
+POSIX: Portable Operating System Interface (standard, norme)                                                               
                                                                                                                            
-### C lib
+C lib
 
 - common header files: stdlib, unistd, stdio, string                                                               
 - variable and limit: stdbool, stdint, limits                                                                      
 - socket headers                                                                                                   
 - API header: syslog, inotify, regex, ncurses, pthread...                                                          
                                                                                                                            
-### Elf format and object code                                                                                                 
+Elf format and object code                                                                                                 
                                                                                                                  
-### GCC                                                                                                                    
+GCC                                                                                                                    
 
 - compilation from .c to .o                                                                                            
 - linkage of symbols in one binary                                                                                        
                                                                                                                            
-### Filesystems
+Filesystems
 
 - rootfs
 - procfs
@@ -90,9 +90,9 @@ Modularity:
 - nfs 
 - ...
 
-### File System Hyerarchy (FHS)                                                                                                                       
+File System Hyerarchy (FHS)                                                                                                                       
                                                                                                                            
-### System Daemons                                                                                                                    
+System Daemons                                                                                                                    
 
 - ntpd                                                                                                                 
 - syslogd                                                                                                              
@@ -134,7 +134,7 @@ data encapsulation principles
 
 Platform requirement -> arm, mips, xtensa, intel, amd, powerpc      
 
-### Buildroot
+Buildroot
 
 Buildroot is a build embedded system automation.
 It provides a simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.
@@ -152,11 +152,11 @@ Similar project:
 - OpenEmbedded
 - PTXdist
 
-### Qemu
+Qemu
 
 Qemu is a generic, lightweight and open source machine emulator and virtualizer
 
-### Busybox
+Busybox
 
 The Swiss Army Knife of Embedded Linux
 
