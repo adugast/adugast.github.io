@@ -45,10 +45,10 @@ go further:
 - EEPROM
 - Power-On Self-Test (POST)
   - Initializes the hardware: verify CPU registers, verify the integrity of the BIOS code itself
-- MBR {
-&nbsp;&nbsp;bootstrap code - call the kernel (446 bytes)                                                                     
-&nbsp;&nbsp;partition table (4 * 16 bytes = 64 bytes)                                                                        
-&nbsp;&nbsp;&nbsp;&nbsp;partition1                                                                                                   
+- MBR {</br>
+> bootstrap code - call the kernel (446 bytes)                                                                     
+> partition table (4 * 16 bytes = 64 bytes)                                                                        
+>> partition1                                                                                                   
 &nbsp;&nbsp;&nbsp;&nbsp;partition2                                                                                                   
 &nbsp;&nbsp;&nbsp;&nbsp;partition3                                                                                                   
 &nbsp;&nbsp;&nbsp;&nbsp;partition4                                                                                                   
