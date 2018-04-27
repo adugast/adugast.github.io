@@ -46,17 +46,16 @@ go further:
 - Power-On Self-Test (POST)
   - Initializes the hardware: verify CPU registers, verify the integrity of the BIOS code itself
 - MBR</br>
-{
-&nbsp;&nbsp;bootstrap code - call the kernel (446 bytes)                                                                     
-&nbsp;&nbsp;partition table (4 * 16 bytes = 64 bytes)                                                                        
-&nbsp;&nbsp;&nbsp;&nbsp;partition1                                                                                                   
-&nbsp;&nbsp;&nbsp;&nbsp;partition2                                                                                                   
-&nbsp;&nbsp;&nbsp;&nbsp;partition3                                                                                                   
-&nbsp;&nbsp;&nbsp;&nbsp;partition4                                                                                                   
-&nbsp;&nbsp;&nbsp;&nbsp;bootsignature (2 bytes, magic number 0x55AA)                                                                 
+{</br>
+&nbsp;&nbsp;&nbsp;&nbsp;bootstrap code - call the kernel (446 bytes)                                                                     
+&nbsp;&nbsp;&nbsp;&nbsp;partition table (4 * 16 bytes = 64 bytes)                                                                        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partition1                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partition2                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partition3                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partition4                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bootsignature (2 bytes, magic number 0x55AA)                                                                 
 }                                                                                                                      
 so 446 + 4*16 + 2 = 512 bytes
-
 - Kernel
 - Init System
 
