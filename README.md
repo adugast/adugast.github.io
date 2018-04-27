@@ -209,7 +209,7 @@ Busybox
 The Swiss Army Knife of Embedded Linux
 
 go further:
-- SFPs, ASIC/FPGA, CPLD, PCB, PCI, IC, I2C, SCSI                                                                 
+- SFPs, ASIC/FPGA, CPLD, PCB, PCI, IC, I2C, SCSI
 - bus                                                                                                                   
 - ARP: Address Resolution Protocol. ARP table in routers to map IP address to mac address                               
 - Udev: Device manager for linux kernel                                                                                                                                                                          
