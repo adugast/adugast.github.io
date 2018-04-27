@@ -1,4 +1,4 @@
-# Linux System Overall and Beyond
+# The Not So Quick Linux Notions Guide
 
 ### Summary
 
