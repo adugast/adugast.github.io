@@ -61,33 +61,44 @@ Types:
 - Hybrid (boundaries between micro and monolithic kernels)                                                          
                                                                                                                         
 Modularity:                                                                                                        
-    Loadable Kernel Module (LKM)
+- Loadable Kernel Module (LKM)
 
 ## 4) Linux System
 
-POSIX: Portable Operating System Interface (standard, norme)                                                               
+### POSIX: Portable Operating System Interface (standard, norme)                                                               
                                                                                                                            
-C lib
+### C lib
+
 - common header files: stdlib, unistd, stdio, string                                                               
 - variable and limit: stdbool, stdint, limits                                                                      
 - socket headers                                                                                                   
 - API header: syslog, inotify, regex, ncurses, pthread...                                                          
                                                                                                                            
-elf format and object code                                                                                                 
-compiler                                                                                                                   
-GCC:                                                                                                                       
-    * compilation from .c to .o                                                                                            
-    * linkage of symbols in one bin                                                                                        
+### Elf format and object code                                                                                                 
+                                                                                                                 
+### GCC                                                                                                                    
+
+- compilation from .c to .o                                                                                            
+- linkage of symbols in one binary                                                                                        
                                                                                                                            
-Filesystems: rootfs, procfs, sysfs, autofs, nfs                                                                            
-FSH:                                                                                                                       
+### Filesystems
+
+- rootfs
+- procfs
+- sysfs
+- autofs
+- nfs 
+- ...
+
+### File System Hyerarchy (FHS)                                                                                                                       
                                                                                                                            
-Daemons                                                                                                                    
-    * ntpd                                                                                                                 
-    * syslogd                                                                                                              
-    * watchdogd                                                                                                            
-    * sshd                                                                                                                                                                    
-    * inetd/xinetd (extended internet daemon)
+### System Daemons                                                                                                                    
+
+- ntpd                                                                                                                 
+- syslogd                                                                                                              
+- watchdogd                                                                                                            
+- sshd                                                                                                                                                                    
+- inetd/xinetd (extended internet daemon)
 
 ## 5) IPC
 
