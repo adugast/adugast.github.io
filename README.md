@@ -1,6 +1,6 @@
 # The Not So Quick Linux Notions Guide
 
-![Linux Logo](https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png)
+![Linux Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tux.png/220px-Tux.png)
 
 ### Summary
 
