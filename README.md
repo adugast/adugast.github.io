@@ -45,25 +45,22 @@ go further:
 - EEPROM
 - Power-On Self-Test (POST)
   - Initializes the hardware: verify CPU registers, verify the integrity of the BIOS code itself
-- MBR
+- MBR {
+&nbsp;&nbsp;bootstrap code - call the kernel (446 bytes)                                                                     
+&nbsp;&nbsp;partition table (4 * 16 bytes = 64 bytes)                                                                        
+&nbsp;&nbsp;&nbsp;&nbsp;partition1                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;partition2                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;partition3                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;partition4                                                                                                   
+&nbsp;&nbsp;&nbsp;&nbsp;bootsignature (2 bytes, magic number 0x55AA)                                                                 
+}                                                                                                                      
+so 446 + 4*16 + 2 = 512 bytes 
 - Kernel
 - Init System
 
 go further:
 - difference BIOS/MBR, UEFI/GUID
-
-MBR {                                                                                                                  
-- bootstrap code - call the kernel (446 bytes)                                                                     
-- partition table (4 * 16 bytes = 64 bytes)                                                                        
-  - partition1                                                                                                   
-  - partition2                                                                                                   
-  - partition3                                                                                                   
-  - partition4                                                                                                   
-  - bootsignature (2 bytes, magic number 0x55AA)                                                                 
-}                                                                                                                      
-so 446 + 4*16 + 2 = 512 bytes                                                                                          
-
-initrd, initramfs            
+- initrd, initramfs            
 
 different initsystems:                                                                                                 
 - s6                                                                                                                
