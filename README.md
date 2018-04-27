@@ -1,4 +1,4 @@
-# The Not So Quick Linux Notions Guide
+# The Not So Fast Linux Notions Guide
 
 ![Linux Logo](https://www.orkutel.com/images/icons/linux-logo_small.png)
 
