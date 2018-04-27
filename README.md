@@ -1,8 +1,7 @@
 # Linux Overall
 
-This course will cover ...
-
 ### Summary
+
 1. Hardware
 2. Boot-Sequence
 3. Kernel
@@ -11,9 +10,12 @@ This course will cover ...
 6. Socket Programming
 7. OSI Model
 8. Embedded Linux
-9. What is the internet (Code.org)
+9. Internet (Code.org)
+10. Unit Test (UT)
+11. Machine Learning, AI and Neuronal Network
 
 ## 1) Hardware
+
 - Motherboard
 - Central Process Unit (CPU)
 Composed of:
@@ -24,6 +26,7 @@ I-time + E-time = Machine Cycle -> (1) Fetch, (2) Decode, (3) Execute, (4) Store
 - Hard Disk
 
 ## 2) Boot-Sequence
+
 - Power ON
 - EEPROM
 - Power-On Self-Test (POST)
@@ -31,12 +34,34 @@ I-time + E-time = Machine Cycle -> (1) Fetch, (2) Decode, (3) Execute, (4) Store
 - Kernel
 - Init System
 
+- different initsystems:                                                                                                 
+    - s6                                                                                                                
+    - systemd(debian)                                                                                                   
+    - upstart(ubuntu)                                                                                                   
+    - openRC                                                                                                            
+    - initng                                                                                                            
+                                                                                                                        
+- different bootloaders:                                                                                                 
+    - GNU GRUB (GRand Unified Bootloader)                                                                               
+    - LILO (Linux Loader)                                                                                               
+    - BURG (New bootloader)                                                                                             
+    - Syslinux
+
 ## 3) Kernel
+
 - process management - scheduler, signal handling, process/threads      OVER CPU                                        
 - memory management - virtual memory and MMU                            OVER RAM                                        
 - filesystems management - filesystem type describe by a block device   OVER Hard Disk, floppy disk, CD                 
 - device drivers - character device                                     OVER Peripherals (mouse, keyboard, audio, ..)   
 - network management - network drivers and network protocols            OVER Network Controller (ethernet or wifi)
+
+Types:                                                                                                                  
+    * Microkernel (as Hurd) - small kernel space, big user space (due to the lack of drivers support, drivers not part of kernel -> in user space)
+    * Monolithic (as Linux)                                                                                             
+    * Hybrid (boundaries between micro and monolithic kernels)                                                          
+                                                                                                                        
+Modularity:                                                                                                             
+    LKM - Loadable Kernel Module
 
 ## 4) Linux System
 
@@ -65,6 +90,7 @@ Daemons
     * inetd/xinetd (extended internet daemon)
 
 ## 5) IPC
+
 - file                                                                                                              
 - signal                                                                                                                                                                  
 - sockets (network and uds)                                                                                         
@@ -74,6 +100,7 @@ Daemons
 - shared memory
 
 ## 6) Socket Programming
+
 - TCP                                                                                                               
 - UDP                                                                                                               
 - RAW                                                                                                               
@@ -94,11 +121,37 @@ data encapsulation principles
 
 ## 8) Embedded Linux
 
-platform requirement -> arm, mips, xtensa, intel, amd, powerpc                                                          
-buildroot -> generates toolchain to compile corresponding bootloader, kernel, rootfs                                    
-qemu -> lightweight virtualization
+Platform requirement -> arm, mips, xtensa, intel, amd, powerpc      
+
+### Buildroot
+
+Buildroot is a build embedded system automation.
+It provides a simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.
+
+Generates:
+- Toolchain: Cross compilation (provides linked, compiler and build utilities i.e make)
+- Bootloader: Loads kernel in memory
+- Kernel: Abstraction on hardware layer
+- Rootfs: Userspace
+
+Similar project:
+- LTIP
+- Yocto
+- OpenWRT
+- OpenEmbedded
+- PTXdist
+
+### Qemu
+
+Qemu is a generic, lightweight and open source machine emulator and virtualizer
+
+### Busybox
+
+The Swiss Army Knife of Embedded Linux
 
 ## 9) Internet
+
+![enter image description here](https://upload.wikimedia.org/wikipedia/commons/f/f4/Code.org_logo.svg)
 
 1. [What is the internet ?](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
 2. [The internet: Wires, Cables, Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM)
@@ -108,3 +161,13 @@ qemu -> lightweight virtualization
 6. [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs)
 7. [The Internet: Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
 8. [The Internet: How Search Works](https://www.youtube.com/watch?v=LVV_93mBfSU)
+
+## 10) Unit Test (UT)
+
+Test Doubles:
+- faking
+- mocking
+- stubbing
+[Difference between fakes, mocks and stubs](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da)
+
+## 11) Machine Learning, AI, and Neuronal Network
