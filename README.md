@@ -251,6 +251,7 @@ Test Doubles:
 - [The Linux Documentation Project](https://www.tldp.org/LDP/tlk/)
 - [How The Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
 - [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/html/single/bgnet.html)
+- [Linux Input Subsystem](https://www.kernel.org/doc/html/v4.15/input/input_uapi.html)
 
 ## Powered by
 
