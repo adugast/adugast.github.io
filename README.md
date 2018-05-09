@@ -253,7 +253,7 @@ Test Doubles:
 - [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/html/single/bgnet.html)
 - [Linux Input Subsystem](https://www.kernel.org/doc/html/v4.15/input/input_uapi.html)
 - [OSDev](https://wiki.osdev.org/Main_Page)
-- [Shichao Notes](https://notes.shichao.io/apue/)
+- [Shichao's Notes](https://notes.shichao.io/apue/)
 
 ## Powered by
 
