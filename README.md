@@ -246,7 +246,7 @@ Test Doubles:
 
 [Quantum Computers Explained](https://www.youtube.com/watch?v=JhHMJCUmq28)
 
-## 13) Best Resources
+## 13) Best References
 
 - [The Linux Documentation Project](https://www.tldp.org/LDP/tlk/)
 - [How The Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
