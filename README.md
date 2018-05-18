@@ -72,7 +72,7 @@ go further:
 - difference BIOS/MBR, UEFI/GUID
 - initrd
 - initramfs: The only purpose of an initramfs is to mount the root filesystem: Then, it provides an adaptative way to load the rootfs from a network, load it from an LVM logical volume, having an encrypted rootfs where a password is required, or for the convenience of specifying the rootfs as a LABEL or UUID.  
-It's an .gpio archive that contains files, tools, libraries, etc... During the boot, the bootloader give the initramfs to the kernel. The kernel creates a tmpfs to be able to extract the content of the initramfs in the system. Then, it launches the init script located at the root of the tmpfs. The script mounts the rootfs, mounts and install all needed files and then, swap each others with the rootfs to finally call the /sbin/init to continue the boot process.
+It's an .gpio archive that contains files, tools, libraries, etc... During the boot, the bootloader give the initramfs to the kernel. The kernel creates a ramfs (or tmpfs if available) to be able to extract the content of the initramfs in the system. Then, it launches the init script located at the root of the tmpfs. The script mounts the rootfs, mounts and install all needed files and then, swap each others with the rootfs to finally call the /sbin/init to continue the boot process.
 
 
 different initsystems:                                                                                                 
