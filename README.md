@@ -72,7 +72,7 @@ go further:
 - difference BIOS/MBR, UEFI/GUID
 - initrd
 - initramfs: The only purpose of an initramfs is to mount the root filesystem: Then, it provides an adaptative way to load the rootfs from a network, load it from an LVM logical volume, having an encrypted rootfs where a password is required, or for the convenience of specifying the rootfs as a LABEL or UUID.  
-(It's an .gpio archive that contains files, tools, libraries, etc... During the boot, the bootloader give the initramfs to the kernel. The kernel creates a tmpfs to be able to extract the content of the initramfs in the system. Then, it launches the init script located at the root of the tmpfs. The script mounts the rootfs, mount ad install all needed files and then, comute the initramfs with the rootfs to finally call the /sbin/init to continue the boot process.)
+It's an .gpio archive that contains files, tools, libraries, etc... During the boot, the bootloader give the initramfs to the kernel. The kernel creates a tmpfs to be able to extract the content of the initramfs in the system. Then, it launches the init script located at the root of the tmpfs. The script mounts the rootfs, mounts and install all needed files and then, swap each others with the rootfs to finally call the /sbin/init to continue the boot process.
 
 
 different initsystems:                                                                                                 
@@ -156,6 +156,14 @@ Mutexes:
 - compare and swap                                                                                                      
 - atomic instruction
 
+Processes: Page Table                                                                                                      
+- Every process have it's own memory space                                                                                 
+- Each address maps to a real address in physical memory                                                                   
+- Processes have a page table in RAM that stares all their mapping (usually 4k blocks, normal size of a page)              
+- every memory access uses the page table                                                                                  
+- when you swith of process the kernel knwd wich page to use and the cpu uses it.                                          
+- some pages don't map to a physical RAM address => CPU BAD ADDRESS "SEGMENTATION FAULT"
+
 ## 5) IPC
 
 - file                                                                                                              
@@ -187,7 +195,21 @@ Mutexes:
 data encapsulation principles
 
 go further:                                                                                                             
-- tcp handshake                                                                                                         
+- tcp 3-way handshake
+```
+     Host1            Host2                                                                                            
+1-    syn     ----->                                                                                                    
+2-            <-----  syn/ack                                                                                           
+3-   ack/data ----->
+
+Host A sends a TCP SYNchronize packet to Host B                                                                         
+Host B receives A's SYN                                                                                                 
+Host B sends a SYNchronize-ACKnowledgement                                                                              
+Host A receives B's SYN-ACK                                                                                             
+Host A sends ACKnowledge                                                                                                
+Host B receives ACK.                                                                                                    
+TCP socket connection is ESTABLISHED.  
+```
 - router, switch, dns, hub, ...
 
 ## 8) Embedded Linux
