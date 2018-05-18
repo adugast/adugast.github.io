@@ -24,9 +24,9 @@
 - Central Processing Unit (CPU)
   - Control Unit (CU)
   - Arithmetic/Logic Unit (ALU)
-  I-time + E-time = Machine Cycle</br>
+  I-time + E-time = Machine Cycle  
   (1) Fetch, (2) Decode, (3) Execute, (4) Store
-  Cache L1/ Cache L2
+  Cache L1/ Cache L2 (Caches are memory in CPU: L1 very fast but very small, L2 more capacity than L1 but less fast. Placed on CPU chip)
 - Random Access Memory (RAM)
   - Static Random Access Memory (SRAM)
   - Dynamic Random Acces Memory (DRAM): transistor and capasitor are paired to create a memory cell which represent a single bit of data
@@ -34,10 +34,19 @@
 
 go further:
 - Network board
+  - Physical Network Interfaces: eth0, eth8, radio0, wlan19. Represents a NIC (Network Interface Controller)
+  - Virtual Network Interfaces: lo, eth0:1, eth0.1, vlan2. Do not represent an existent hardware device but is linked to one.
+  - NIC connects a computer to computer network. It's a component connected to the motherboard via PCI connectors, PCI-E, USB, Thunderbold, FireWire, ISA connector, ... and provide network via ethernet, wifi, fibre, fddi, token ring ...
+  - Loopback interface, TUN/TAP interface, ...  
 - Graphical Processing Unit (GPU)
 - Von Neumann Architecture
-- Transistor: acts as a switch that lets the control circuitry on the memory chip to read the capacitor or change it state
-- Capacitor
+- Electrical Components:   
+  - Transistor: acts as a switch that lets the control circuitry on the memory chip to read the capacitor or change it state   
+  - Capacitor   
+- Difference NOR/NAND (MTD - Memory Technology Device)
+  - NOR flash is byte-addressable. It's usually used in applications where a CPU needs to execute code from it directly, like BIOS or boot ROM firmware.   
+  - NAND works in blocks somewhat like disks. So generally anything else, especially in memory card or storage device situations, is going to be NAND. Some NAND has a "Disk On Chip" mode where block 0 can be executed directly, but not any other blocks.  
+
 
 ## 2) Boot-Sequence
 
@@ -45,8 +54,8 @@ go further:
 - EEPROM
 - Power-On Self-Test (POST)
   - Initializes the hardware: verify CPU registers, verify the integrity of the BIOS code itself
-- MBR</br>
-{</br>
+- MBR  
+{  
 &nbsp;&nbsp;&nbsp;&nbsp;bootstrap code - call the kernel (446 bytes)                                                                     
 &nbsp;&nbsp;&nbsp;&nbsp;partition table (4 * 16 bytes = 64 bytes)                                                                        
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partition1                                                                                                   
