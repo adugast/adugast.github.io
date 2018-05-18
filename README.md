@@ -164,13 +164,19 @@ Processes: Page Table
 - when you swith of process the kernel knwd wich page to use and the cpu uses it.                                          
 - some pages don't map to a physical RAM address => CPU BAD ADDRESS "SEGMENTATION FAULT"
 
+Memory Allocation algorythm:
+  - Buddy memory allocation
+  - Stack based memory allocation
+  - Slab memory allocation
+
+
 ## 5) IPC
 
 - file                                                                                                              
 - signal                                                                                                                                                                  
 - sockets (network and uds)                                                                                         
-- messages queue                                                                                                    
-- named pipes                                                                                                       
+- messages queue, mqueue                                                                                                    
+- named pipes, mkfifo                                                                                                       
 - pipes                                                                                                             
 - shared memory
 
@@ -264,6 +270,10 @@ go further:
 6. [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs)
 7. [The Internet: Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
 8. [The Internet: How Search Works](https://www.youtube.com/watch?v=LVV_93mBfSU)
+
+Network architecture:
+  - Peer-to-Peer (P2P)
+  - Client-Server
 
 ## 10) Unit Test
 
