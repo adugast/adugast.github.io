@@ -137,7 +137,8 @@ Filesystems:
 - procfs
 - sysfs
 - autofs
-- nfs 
+- nfs  
+- FUSE  
 - ...
 
 FHS - Filesystem Hierarchy Standard
