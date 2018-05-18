@@ -25,12 +25,12 @@
   - Control Unit (CU)
   - Arithmetic/Logic Unit (ALU)
   I-time + E-time = Machine Cycle  
-  (1) Fetch, (2) Decode, (3) Execute, (4) Store
+  (1) Fetch, (2) Decode, (3) Execute, (4) Store  
   Cache L1/ Cache L2 (Caches are memory in CPU: L1 very fast but very small, L2 more capacity than L1 but less fast. Placed on CPU chip)
 - Random Access Memory (RAM)
   - Static Random Access Memory (SRAM)
   - Dynamic Random Acces Memory (DRAM): transistor and capasitor are paired to create a memory cell which represent a single bit of data
-- Hard Disk
+- Hard Disk, SSD
 
 go further:
 - Network board
@@ -70,7 +70,10 @@ so 446 + 4*16 + 2 = 512 bytes
 
 go further:
 - difference BIOS/MBR, UEFI/GUID
-- initrd, initramfs            
+- initrd
+- initramfs: The only purpose of an initramfs is to mount the root filesystem: It provides an adaptative way to load the rootfs from a network, load it from an LVM logical volume, having an encrypted rootfs where a password is required, or for the convenience of specifying the rootfs as a LABEL or UUID.  
+  It's an .gpio archive that contains files, tools, libraries, etc... During the boot, the bootloader give the initramfs to the kernel. The kernel creates a tmpfs to be able to extract the content of the initramfs in the system. Then, it launches the init script located at the root of the tmpfs. The script mounts the rootfs, mount ad install all needed files and then, comute the initramfs with the rootfs to finally call the /sbin/init to continue the boot process.
+
 
 different initsystems:                                                                                                 
 - s6                                                                                                                
