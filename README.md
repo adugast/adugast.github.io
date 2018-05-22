@@ -46,7 +46,7 @@ go further:
 - Difference NOR/NAND (MTD - Memory Technology Device)
   - NOR flash is byte-addressable. It's usually used in applications where a CPU needs to execute code from it directly, like BIOS or boot ROM firmware.   
   - NAND works in blocks somewhat like disks. So generally anything else, especially in memory card or storage device situations, is going to be NAND. Some NAND has a "Disk On Chip" mode where block 0 can be executed directly, but not any other blocks.  
-![MTD](http://www.linux-mtd.infradead.org/doc/general.html#L_overview)
+- [MTD](http://www.linux-mtd.infradead.org/doc/general.html#L_overview)
 
 ## 2) Boot-Sequence
 
