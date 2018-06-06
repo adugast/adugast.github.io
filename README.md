@@ -200,6 +200,16 @@ Memory Allocation algorythm:
 
 ## 7) OSI Model - Open System Interconnection
 
+| Level | Layer Name      |           Manage                                          |           Hardware                            |
+|------:|:---------------:|:---------------------------------------------------------:|:----------------------------------------------|
+| 7     | application     | web browser, http, ftp, dns, telnet, smtp, ssh, snmp, nfs | Allow access to network resource
+| 6     | presentation    | SSL, TLS, ASCII, jpeg, gif, html                          | Translate, encrypt, compress data
+| 5     | session         | Socket RPC                                                | Establish, manage and terminate sessions
+| 4     | transport       | TCP UDP SPX                                               | Provide reliable message delivery and error recovery
+| 3     | network         | IP IPX Appletalk                                          | Move packets from source to destination and provide networking |
+| 2     | data            | ethernet, token ring, 802.11                              | Organize bits into frames and provide hop-to-hop delivery   |
+| 1     | physical        | copper, fiber, antenna (electric, ligth, radio signals)   | Transmit bits over a medium and provide mechanical and electrical specifications |
+
 7- application - web browser, http, ftp, dns, telnet, smtp, ssh, snmp, nfs                                              
 6- presentation - SSL, TLS, ASCII, jpeg, gif, html                                                                      
 5- session - Socket RPC                                                                                                 
