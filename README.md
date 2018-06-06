@@ -94,6 +94,14 @@ different bootloaders:
 
 ## 3) Kernel
 
+|       Components       |           Manage                                 |           Hardware                         |
+|:----------------------:|:------------------------------------------------:|:-------------------------------------------|
+| process management     | scheduler, signal handling, process/threads      | CPU                                        |
+| memory management      | virtual memory and MMU                           | RAM                                        |
+| filesystems management | filesystem type describe by a block device       | Hard Disk, floppy disk, CD                 |
+| device drivers         | filesystem type describe by a character device   |  Peripherals (mouse, keyboard, audio, ..)  |
+| network management     | network drivers and network protocols            |  Network Controller (ethernet or wifi)     |
+
 - process management - scheduler, signal handling, process/threads      OVER CPU                                        
 - memory management - virtual memory and MMU                            OVER RAM                                        
 - filesystems management - filesystem type describe by a block device   OVER Hard Disk, floppy disk, CD                 
