@@ -6,7 +6,7 @@
 
 ![Linux Logo](https://www.orkutel.com/images/icons/linux-logo_small.png)
 
-### Summary
+## Summary
 
 1. Hardware
 2. Boot-Sequence
