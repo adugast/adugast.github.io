@@ -179,6 +179,24 @@ Memory Allocation algorythm:
   - Stack based memory allocation
   - Slab memory allocation
 
+Linux MANUALS:   
+```
+use man man !    
+```
+Man pages are organized in 8 sections:
+
+|       Section nbr       |           Manage                                                               |
+|:-----------------------:|:-------------------------------------------------------------------------------|
+| man 1                   | Executable programs or shell commands                                          | 
+| man 2                   | System calls (functions provided by the kernel)                                | 
+| man 3                   | Library calls (functions within program libraries)                             | 
+| man 4                   | Special files (usually found in /dev)                                          | 
+| man 5                   | File formats and conventions eg /etc/passwd                                    | 
+| man 6                   | Games                                                                          | 
+| man 7                   | Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)| 
+| man 8                   | System administration commands (usually only for root)                         | 
+| man 9                   | Kernel routines [Non standard]                                                 | 
+
 
 ## 5) IPC
 
@@ -208,15 +226,7 @@ Memory Allocation algorythm:
 | 4     | transport       | TCP UDP SPX                                               | Provide reliable message delivery and error recovery
 | 3     | network         | IP IPX Appletalk                                          | Move packets from source to destination and provide networking |
 | 2     | data            | ethernet, token ring, 802.11                              | Organize bits into frames and provide hop-to-hop delivery   |
-| 1     | physical        | copper, fiber, antenna (electric, ligth, radio signals)   | Transmit bits over a medium and provide mechanical and electrical specifications |
-
-7- application - web browser, http, ftp, dns, telnet, smtp, ssh, snmp, nfs                                              
-6- presentation - SSL, TLS, ASCII, jpeg, gif, html                                                                      
-5- session - Socket RPC                                                                                                 
-4- transport - TCP UDP SPX                                                                                              
-3- network - IP IPX Appletalk                                                                                           
-2- data - ethernet, token ring, 802.11                                                                                  
-1- physical - copper, fiber, antenna (electric, ligth, radio signals)
+| 1     | physical        | copper, fiber, antenna (electric, light, radio signals)   | Transmit bits over a medium and provide mechanical and electrical specifications |
 
 data encapsulation principles
 
