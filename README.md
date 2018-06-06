@@ -94,19 +94,16 @@ different bootloaders:
 
 ## 3) Kernel
 
-|       Components       |           Manage                                 |           Hardware                         |
-|:----------------------:|:------------------------------------------------:|:-------------------------------------------|
-| process management     | scheduler, signal handling, process/threads      | CPU                                        |
-| memory management      | virtual memory and MMU                           | RAM                                        |
-| filesystems management | filesystem type describe by a block device       | Hard Disk, floppy disk, CD                 |
-| device drivers         | filesystem type describe by a character device   |  Peripherals (mouse, keyboard, audio, ..)  |
-| network management     | network drivers and network protocols            |  Network Controller (ethernet or wifi)     |
+### Linux Kernel Structure
 
-- process management - scheduler, signal handling, process/threads      OVER CPU                                        
-- memory management - virtual memory and MMU                            OVER RAM                                        
-- filesystems management - filesystem type describe by a block device   OVER Hard Disk, floppy disk, CD                 
-- device drivers - character device                                     OVER Peripherals (mouse, keyboard, audio, ..)   
-- network management - network drivers and network protocols            OVER Network Controller (ethernet or wifi)
+|       Components       |           Manage                                 |           Hardware                            |
+|:----------------------:|:------------------------------------------------:|:----------------------------------------------|
+| process management     | scheduler, signal handling, process/threads      | CPU                                           |
+| memory management      | virtual memory and MMU                           | RAM                                           |
+| filesystems            | filesystem types and block devices               | Hard Disk, floppy disk, CD                    |
+| device drivers         | character devices                                | User peripherals (mouse, keyboard, audio, ..) |
+| network management     | network drivers and network protocols            | Network Controller (ethernet or wifi)         |
+
 
 Types:                                                                                                                  
 - Microkernel (as Hurd): small kernel space, big user space (due to the lack of drivers support, drivers not part of kernel -> in user space)
