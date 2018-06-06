@@ -1,4 +1,6 @@
-# The Not So Fast Linux Notions Guide ![Type: Document](https://img.shields.io/badge/Type-Document-brightgreen.svg)
+# The Not So Fast Linux Notions Guide   
+
+![Type: Document](https://img.shields.io/badge/Type-Document-brightgreen.svg)   
 
 ![Linux Logo](https://www.orkutel.com/images/icons/linux-logo_small.png)
 
