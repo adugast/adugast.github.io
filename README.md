@@ -1,6 +1,6 @@
 # The Not So Fast Linux Notions Guide   
 
-![Type: Document](https://img.shields.io/badge/Type-Document-brightgreen.svg)   ![OS: Linux](https://img.shields.io/badge/OS-Linux-brightgreen.svg)   [![Website: ON](https://img.shields.io/badge/Website-ON-brightgreen.svg)](https://pestbuns.github.io/) : https://pestbuns.github.io/
+![Type: Document](https://img.shields.io/badge/Type-Document-brightgreen.svg)   ![OS: Linux](https://img.shields.io/badge/OS-Linux-brightgreen.svg)   [![Website: ON](https://img.shields.io/badge/Website-ON-brightgreen.svg)](https://adugast.github.io/) : https://adugast.github.io/
 
 -----------------------------------------------------------------------------------------
 
